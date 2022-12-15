@@ -1,0 +1,16 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Demo Auth</h1>
+        {% if user.is_authenticated %}
+            <p>Welcome {{ user.username }}</p>
+        {% else %}
+            <p>welcome Please Login</p>
+        {% endif %}
+    </body>
+</html>
